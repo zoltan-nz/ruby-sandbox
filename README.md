@@ -29,3 +29,5 @@ Add `guard-spec` for test watcher:
 ```
 
     bundle exec guard init
+    
+* [Creating CLI with `Thor`](https://bundler.io/v1.16/guides/creating_gem.html#crafting-a-cli)    
