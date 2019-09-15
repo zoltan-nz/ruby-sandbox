@@ -1,0 +1,11 @@
+.editorconfig
+.gitignore
+.idea
+.prettierignore
+.rspec
+.rspec_status
+setup
+*.feature
+*.lock
+*.txt
+*.erb

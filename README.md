@@ -16,6 +16,11 @@ Install packages:
 
     $ gem install solargraph rubocop ruby-debug-ide
 
+Setup and run Prettier:
+
+    yarn global add prettier @prettier/plugin-ruby
+    prettier --write '**/*.*'
+
 ## Experiment #1 - Creating gem with bundler
 
 Create a new gem scaffold:
@@ -30,8 +35,8 @@ Add `guard-spec` for test watcher:
 
 ```ruby
 # .gemspec
-  spec.add_development_dependency "guard-rspec", "~> 4.7"
-  spec.add_development_dependency "guard", "~> 2.14"
+spec.add_development_dependency 'guard-rspec', '~> 4.7'
+spec.add_development_dependency 'guard', '~> 2.14'
 ```
 
     bundle exec guard init
