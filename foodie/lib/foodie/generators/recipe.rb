@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'thor/group'
 
 module Foodie
@@ -9,7 +11,7 @@ module Foodie
       argument :name, type: :string
 
       def self.source_root
-        File.dirname(__FILE__) + "/recipe"
+        File.dirname(__FILE__) + '/recipe'
       end
 
       def create_group
@@ -17,7 +19,7 @@ module Foodie
       end
 
       def copy_recipe
-        template("recipe.txt", "#{group}/#{name}.txt")
+        template('recipe.txt', "#{group}/#{name}.txt")
       end
     end
   end
